@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Formulário</h1>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <fieldset>
+            <legend>data</legend>
+            <input type="date" id="data" name="data">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de acesso</legend>
+            <label for="user">Usuário</label>
+            <input type="text" id="user" name="user"><br><br>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name"><br><br>
+          
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco"><br><br>
+          
+            <label for="number">Numero</label>
+            <input type="number" name="number" id="number"><br><br>
+          
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento"><br> <br>
+          
+            <label for="cidade">cidade</label>
+            <input list="cidade" name="cidade">
+            <datalist id="cidade">
+                <option value="Sorocaba">
+                <option value="Itu">
+                <option value="araçoiba">
+                <option value="aluminio">
+            </datalist><br><br>
+           
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado">
+                <option value="SP">São paulo</option>
+                <option value="MG">Minas gerais</option>
+                <option value="SE">Sergipe</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select><br><br>
+            
+            <label for="CEP">CEP</label>
+            <input type="number" id="CEP" name="CEP">
+        </fieldset>
+   
+        <fieldset>
+            <legend>Gênero</legend>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"><br><br>
+
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino"><br><br>
+
+            <label for="nao_falar">Prefiro não falar</label>
+            <input type="radio" id="nao_falar" name="genero" value="nao_falar"><br><br>
+        </fieldset>
+       
+        <fieldset>
+            <legend>Curso</legend>
+            <label for="ads">ADS</label>
+            <input type="checkbox" id="ads" name="curso" value="ads"><br><br>
+
+            <label for="jogos">Jogos</label>
+            <input type="checkbox" id="jogos" name="curso" value="jogos"><br><br>
+
+            <label for="gestao_ti">Gestão de TI</label>
+            <input type="checkbox" id="gestao_ti" name="curso" value="gestao_ti"><br><br>
+
+            <label for="banco_dados">Banco de Dados</label>
+            <input type="checkbox" id="banco_dados" name="curso" value="banco_dados"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Modelo</legend>
+            <label for="presencial">Presencial</label>
+            <input type="radio" id="presencial" name="modelo" value="presencial"><br><br>
+
+            <label for="ead">EAD</label>
+            <input type="radio" id="ead" name="modelo" value="ead"><br><br>
+
+            <label for="semi_presencial">Semi Presencial</label>
+            <input type="radio" id="semi_presencial" name="modelo" value="semi_presencial"><br><br>
+        </fieldset><br> <BR>
+
+            <input  type="submit" name="Enviar">
+    </form>
+</body>
+
+</html>
